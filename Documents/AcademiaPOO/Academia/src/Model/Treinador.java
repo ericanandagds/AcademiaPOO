@@ -1,15 +1,13 @@
 
 package Model;
 
-import Model.Pessoa;
-import Model.Cliente;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Treinador extends Pessoa{
     private List<Cliente> alunos;
-    public Treinador(String nome, String cpf, String rg) {
-        super(nome, cpf, rg);
+    public Treinador(String nome, String cpf, String rg, String sexo) {
+        super(nome, cpf, rg, sexo);
         this.alunos = new ArrayList<>();
     }
 

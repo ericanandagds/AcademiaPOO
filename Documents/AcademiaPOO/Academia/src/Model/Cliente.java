@@ -6,8 +6,16 @@ import java.util.List;
 
 public class Cliente extends Pessoa {
     private List<Treino> meusTreinos;
-    public Cliente(String nome, String cpf, String rg) {
-        super(nome, cpf, rg);
+
+    /**
+     *
+     * @param nome
+     * @param cpf
+     * @param rg
+     * @param sexo
+     */
+    public Cliente(String nome, String cpf, String rg, String sexo ) {
+        super(nome, cpf, rg, sexo);
         this.meusTreinos = new ArrayList<>();
     }
 

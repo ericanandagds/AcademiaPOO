@@ -7,8 +7,13 @@ import Model.Atividade;
 import java.util.List;
 
 
+
 public class Academia {
 
+public static void main (String[] args){
+
+System.out.println();
+}
     private List<Treinador> treinadores;
 
     public List<Treinador> getTreinadores() {
