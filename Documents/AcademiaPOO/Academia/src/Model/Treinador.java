@@ -1,6 +1,8 @@
 
-package academia;
+package Model;
 
+import Model.Pessoa;
+import Model.Cliente;
 import java.util.ArrayList;
 import java.util.List;
 

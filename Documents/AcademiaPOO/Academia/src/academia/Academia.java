@@ -1,5 +1,9 @@
 package academia;
 
+import Model.Treino;
+import Model.Treinador;
+import Model.Cliente;
+import Model.Atividade;
 import java.util.List;
 
 

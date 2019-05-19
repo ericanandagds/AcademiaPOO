@@ -1,5 +1,5 @@
 
-package academia;
+package Model;
 
 import java.io.Serializable;
 
