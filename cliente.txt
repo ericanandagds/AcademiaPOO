@@ -1,0 +1,66 @@
+
+package Model;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+ public class Cliente extends Pessoa implements Serializable{
+    private List<Treino> meusTreinos;
+
+	private static final long serialVersionUID = 5513475363941963598L;
+	private double peso, altura;
+	private int idade;
+
+    /**
+     *
+     * @param nome
+     * @param rg
+     * @param cpf
+     * @param sexo
+     * @param peso
+     * @param altura
+     * @param idade
+     */
+    public Cliente(String nome, String rg, String cpf, String sexo, double peso, double altura, int idade) {
+		super(nome,rg, cpf, sexo);
+		this.peso = peso;
+		this.altura = altura;
+		this.idade = idade;
+	}
+
+	public double getPeso() {
+		return peso;
+	}
+
+	public void setPeso(double peso) {
+		this.peso = peso;
+	}
+
+	public double getAltura() {
+		return altura;
+	}
+
+	public void setAltura(double altura) {
+		this.altura = altura;
+	}
+
+	public int getIdade() {
+		return idade;
+	}
+
+	public void setIdade(int idade) {
+		this.idade = idade;
+	}
+
+    @Override
+  public String toString() {
+		return "Cliente [nome: " + super.getNome().toUpperCase() + " | cpf: " + super.getCpf() + " | sexo: " + super.getSexo().toUpperCase()
+				+ " | peso: " + peso + " | altura: " + altura + " | idade: " + idade + "\n---------------------------------------------------------------------------------------------------------------\n";
+	}
+
+    public Iterable<Treino> getMeusTreinos() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+}
